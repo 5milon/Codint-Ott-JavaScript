@@ -1,0 +1,90 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    height: 100vh;
+    width: 75%;
+    background: rgb(247, 228, 231);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#card {
+    width: 350px;
+    background: white;
+    padding: 16px;
+    box-shadow: 0 0 10px 0 #ddd;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+#card h1 {
+    color: rgb(36, 161, 245);
+    text-align: center;
+}
+
+#signup {
+    display: flex;
+    flex-direction: column;
+}
+
+#signup input {
+    margin: 8px 2px;
+    padding: 12px 8px;
+    border: 1px solid rgb(202, 186, 186);
+}
+
+#signup button {
+
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    background: rgb(14, 123, 196);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+#model-body{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#model-content{
+    background-color: white;
+    height: 45vh;
+    width: 45%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#model-content #icon-check{
+   color: green;
+   font-size: 50px;
+}
+#model-content #xMark{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 25px;
+    border: none;
+    border-radius: 15px;
+    padding: 0;
+   cursor: pointer;
+    
+}

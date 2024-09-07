@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="card" class="animate__animated animate__pulse animate__infinite animate__slower">
+            <h1>Register Now</h1>
+            <form action="" id="signup" autocomplete="off" onsubmit="signup(event)" name="register">
+                <input value="Milon" id="firstname" type="text" name="firstname" placeholder="Firstname"
+                    required="true">
+                <input value="Ali" id="lastname" type="text" name="lastname" placeholder="Lastname" required="true">
+                <input value="khalidbin@gmail.com" id="email" type="email" name="email" placeholder="example@gmail.com"
+                    required="true">
+                <input value="1122334455mm.." id="password" type="password" name="password" placeholder="********"
+                    required="true">
+                <button onclick="modelBody()">Submit</button>
+
+            </form>
+        </div>
+
+        <div id="model-body">
+            <div id="model-content">
+                <button id="xMark" onclick="closeClick()">
+                    <i class="fa fa-circle-xmark"></i>
+                </button>
+
+                <i class="fa fa-circle-check" id="icon-check" ></i>
+                <h1>Congraculation</h1>
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

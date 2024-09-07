@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulding Calculator Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="container">
+        <section class="calculator">
+            <h1>Calculator</h1>
+            <input readonly="true" id="result" type="text" placeholder="Calculate something">
+            <div class="button">
+                <button onclick="inputNumber(7)">7</button>
+                <button onclick="inputNumber(8)">8</button>
+                <button onclick="inputNumber(9)">9</button>
+                <button onclick="inputNumber('*')">*</button> <br>
+
+                <button onclick="inputNumber(4)">4</button>
+                <button onclick="inputNumber(5)">5</button>
+                <button onclick="inputNumber(6)">6</button>
+                <button onclick="inputNumber('-')">-</button>
+
+
+                <button onclick="inputNumber(1)">1</button>
+                <button onclick="inputNumber(2)">2</button>
+                <button onclick="inputNumber(3)">3</button>
+                <button onclick="inputNumber('+')">+</button>
+
+                <button onclick="inputNumber(0)">0</button>
+                <button onclick="inputNumber('.')">.</button>
+                <button onclick="cancel()">C</button>
+                <button onclick="cals()">=</button>
+
+                <button onclick="even()" style="width: 44%;">Even</button>
+                <button onclick="odd()" style="width: 44%;">Odd</button>
+
+                
+
+                
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
