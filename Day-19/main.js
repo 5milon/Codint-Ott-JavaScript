@@ -22,3 +22,27 @@ function toggle(){
  }
     
 }
+
+function tab(activeBtn, inActiveBtn,activeId, InactiveId){
+   var active = document.getElementById(activeId);
+   var inActive = document.getElementById(InactiveId);
+   var activebtn = document.getElementById(activeBtn);
+   var inActivebtn = document.getElementById(inActiveBtn);
+
+
+   activebtn.style.background ='darkorange';
+   activebtn.style.color = 'white';
+
+   inActivebtn.style.background ='white';
+   inActivebtn.style.color = 'black';
+
+
+   active.style.display = 'block';
+   inActive.style.display = 'none';
+}
+
+function singup(){
+   event.preventDefault();
+   var form = document.forms;
+   console.log(form);
+}

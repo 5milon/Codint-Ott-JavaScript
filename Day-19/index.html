@@ -5,32 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day-19</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
 <body>
     <div class="container">
+
         <div class="sidenav">
             <div class="sidenav-menu">
-                <button>Register</button>
-                <button>Sign in</button>
+                <button id="register-btn"onclick="tab('register-btn', 'signin-btn','register','signin')">Register</button>
+                <button id="signin-btn" onclick="tab('signin-btn','register-btn','signin','register')">Sign in</button>
             </div>
 
 
         </div>
         <div class="section">
-           <nav class="topnav">
+            <nav class="topnav">
                 <button onclick="toggle()" id="toggle">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <h1 class="topnav-h1">Coding Ott</h1>
             </nav>
 
+            <div class="contain">
+                <div id="register">
+                    <h1 id="label">Register</h1>
+                    <div class="card animate__animated animate__slideInLeft animate__faster">
+                        <form action=""  onsubmit="singup(event)">
+                            <input type="text" placeholder="Fullname" value="Milon">
+                            <input type="email" placeholder="example@gmail.com" value="mdmilonali@gmail.com">
+                            <input type="password" placeholder="*********" value="12334544q45">
+                            <button>Register now</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="signin">
+                    <h1 id="label">Signin</h1>
+                    <div class="card animate__animated animate__slideInLeft animate__faster">
+                        <form action="">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button>Register now</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
 
-    
+
 
 
     <script src="main.js"></script>
